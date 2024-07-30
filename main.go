@@ -184,7 +184,7 @@ func (s Swimming) meanSpeed() float64 {
 	if durationInHours == 0 {
 		return 0
 	}
-	return float64(s.LengthPool*s.CountPool) / MInKm / s.Duration.Hours()
+	return float64(s.LengthPool*s.CountPool) / MInKm / durationInHours
 }
 
 // Calories возвращает количество калорий, потраченных при плавании.
